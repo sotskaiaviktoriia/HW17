@@ -21,10 +21,10 @@ form.onsubmit = (event) => {
   list.append(li);
   form.reset();
 
-  const button_delete = document.createElement("button");
-  button_delete.classList.add("remove_button");
-  button_delete.textContent = "delete";
-  li.append(button_delete);
+  const buttonDelete = document.createElement("button");
+  buttonDelete.classList.add("remove_button");
+  buttonDelete.textContent = "delete";
+  li.append(buttonDelete);
 
   text_input.oninput = () => {
     const isErrorField = text_input.classList.contains("error");
